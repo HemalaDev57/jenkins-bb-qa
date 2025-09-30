@@ -2,18 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('BUILD') {
             stages {
                 stage('Compile') {
                     steps {
                         echo 'Compiling...'
-                        sleep 10
+                        sleep 20
                     }
                 }
                 stage('Package') {
                     steps {
                         echo 'Packaging...'
-                        sleep 5
+                        sleep 10
                     }
                 }
             }
@@ -44,7 +44,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('DEPLOY') {
             steps {
                 echo 'Deploying...'
                 sleep 5
