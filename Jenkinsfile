@@ -40,7 +40,7 @@ pipeline {
                 echo 'Running Unit Tests...'
                 sleep 10
                 echo 'Running Integration Tests...'
-                sleep 5
+                sleep 10
             }
         }
 
